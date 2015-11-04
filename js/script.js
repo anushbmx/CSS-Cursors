@@ -1,5 +1,7 @@
+var CSSCurssors = CSSCurssors || {};
+
 window.onload = function() { 
-	loadCursors();
+	CSSCurssors.loadCursors();
 }
 
 /**
@@ -11,7 +13,8 @@ window.onload = function() {
  * an entry needs 'name' property to get displayed, other properties are optional if no  value for browser 
  * is set the browser will be indicated as not supported.
  */
-var cursors = [
+
+CSSCurssors.cursors = [
 	'{ "name" : "auto", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}',
 	'{ "name" : "default", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}',
 	'{ "name" : "none", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}',
@@ -51,15 +54,15 @@ var cursors = [
  * Called on page load, parses the Array, extract data and transfer to createNode to make an entry.
  * returned node is appended to the div.
  */
-function loadCursors() {
+CSSCurssors.loadCursors = function() {
 	var cursorItems = document.getElementById("cursorItems");
-	var sizeOfcursorItems = cursors.length;
+	var sizeOfcursorItems = CSSCurssors.cursors.length;
 	var end = 0;
-	for ( var cursor in cursors ) {
+	for ( var cursor in CSSCurssors.cursors ) {
 		if ( (sizeOfcursorItems-1 ) == cursor) {
 			end = 1;
 		}
-		cursorItems.appendChild(createNode(cursors[cursor],end));
+		cursorItems.appendChild(CSSCurssors.createNode(CSSCurssors.cursors[cursor],end));
 	}
 }
 
@@ -68,7 +71,7 @@ function loadCursors() {
  *
  * Cretes new node for a property and sets the cursor value to it.
  */
-function createNode (cursorData, end ) {
+CSSCurssors.createNode = function(cursorData, end ) {
 	var cursorData =  JSON.parse(cursorData);
 	if ( cursorData['name'] ) {
 		var newCursorNode = document.createElement("div");
