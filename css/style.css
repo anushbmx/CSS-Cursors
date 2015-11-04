@@ -1,0 +1,100 @@
+
+body{
+	font-family: "Merriweather Sans";
+	font-weight: 100;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Merriweather Sans";
+	font-weight: bold;
+	letter-spacing: -1px;
+	line-height: 1;
+	text-transform: capitalize; 
+}
+
+.logo {
+	padding:1rem;
+}
+
+.row {
+	max-width: 90rem;
+}
+
+#container, #contenter{
+	background-color: rgb(245, 245, 245);
+	height: 100%;
+	width: 100%;
+}
+
+.content {
+	overflow: auto;
+	height: 100%;
+}
+
+.sidebar{
+	background: rgb(54, 67, 71);
+	height: 100%;
+}
+
+	.sidebar * {
+		color: rgba(255,255,255,1) !important;
+	}
+
+@media only screen and (max-width: 64.0625em) {
+	.sidebar{
+		background: rgb(54, 67, 71);
+		height: auto;
+	}
+}
+
+/* Grid Box */
+
+.grid {
+	border-right: 1px solid rgba(183, 183, 183,1);
+	border-bottom: 1px solid rgba(183, 183, 183,1);
+	height: 150px;
+	position: relative;
+}
+
+.grid:hover{
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	transform: scale(1);
+	z-index: 999;
+}
+
+.description-wrap{
+	display: table;
+	height: 100%;
+	position: absolute;
+	width: 90%;
+}
+
+.description{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+
+.browserSupport {
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
+.browserSupport li{
+	color: rgba(37, 37, 37,0.2);
+	display: inline-block;
+	font-size: 1rem;
+	list-style: none;
+	margin-right: 1rem;
+}
+
+.browserSupport .active {
+	color: rgba(37, 37, 37,1);
+}
