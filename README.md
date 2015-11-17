@@ -3,6 +3,8 @@ CSS Cursors
 
 This is a showcase wrapping the different cursor properties you can set via CSS.
 
+<strong>Note : This is production version, it includes the analytic and Ad code. Work master branch.</strong>
+
 Add New Cursor
 --------------
 
