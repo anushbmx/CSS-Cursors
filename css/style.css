@@ -1,5 +1,6 @@
 
 body{
+	background-color: rgb(245, 245, 245);
 	font-family: "Merriweather Sans";
 	font-weight: 100;
 }
@@ -21,7 +22,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #container, #contenter{
-	background-color: rgb(245, 245, 245);
 	height: 100%;
 	width: 100%;
 }
