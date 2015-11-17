@@ -33,6 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .sidebar{
 	background: rgb(54, 67, 71);
+	overflow: auto;
 	height: 100%;
 }
 
