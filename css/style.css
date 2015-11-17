@@ -122,3 +122,71 @@ h1, h2, h3, h4, h5, h6 {
 .browserSupport .active {
 	color: rgba(37, 37, 37,1);
 }
+
+/* Carbon ads */
+
+#carbonads {
+	max-width: 300px;
+	margin: 0 auto;
+}
+.carbon-wrap {
+	display: inline-block;
+}
+.carbonad{
+	background-color:#FBFBFB;
+	border:2px solid #E8E8E8;
+	height:215px;
+	line-height:1.2;
+	width:150px
+}
+
+.carbon-img{
+	float:left;
+	height:100px;
+	margin-left:11px;
+	margin-top:11px;
+	width:130px
+}
+
+.carbon-text{
+	float:left;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11px;
+	font-weight:400;
+	height:50px;
+	margin-left:15px;
+	margin-top:9px;
+	width:119px
+}
+
+.carbon-text a{
+        color:rgba(0, 0, 0, 0.8);
+	text-decoration:none;
+	text-transform:none;
+}
+
+.carbon-tag{
+	color:#999;
+	float:left;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11px;
+	font-weight:400;
+	margin-left:17px;
+	margin-top:15px;
+	padding-top:5px
+}
+
+.carbon-tag a{
+	color:#999;
+	text-align:center;
+	text-decoration:none;
+	font-weight:700
+}
+.carbon-poweredby {
+    color: rgb(119, 119, 119) !important;
+    margin-top: 2px;
+    font-size: 12px;
+    display: inline-block;
+    float : right;
+    text-align: right;
+}
