@@ -41,6 +41,29 @@ h1, h2, h3, h4, h5, h6 {
 		color: rgba(255,255,255,1) !important;
 	}
 
+	.sidebar a {
+		text-decoration: underline;
+	}
+
+
+#loading-container{
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+.container-wrap{
+	display: table-cell;
+	vertical-align: middle;
+}
+.playground{
+/* For styling only */
+	height: 100px;
+	line-height: 100px;
+	margin: 0 auto;
+	text-align: center;
+	width: 500px;
+}
+
 @media only screen and (max-width: 64.0625em) {
 	.sidebar{
 		background: rgb(54, 67, 71);

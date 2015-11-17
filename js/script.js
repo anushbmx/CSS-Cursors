@@ -56,6 +56,8 @@ CSSCurssors.cursors = [
  */
 CSSCurssors.loadCursors = function() {
 	var cursorItems = document.getElementById("cursorItems");
+	var loadingContainer = document.getElementById("loading-container");
+	loadingContainer.parentElement.removeChild(loadingContainer);
 	var sizeOfcursorItems = CSSCurssors.cursors.length;
 	var end = 0;
 	for ( var cursor in CSSCurssors.cursors ) {

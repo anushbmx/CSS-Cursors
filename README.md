@@ -3,6 +3,28 @@ CSS Cursors
 
 This is a showcase wrapping the different cursor properties you can set via CSS.
 
+Add New Cursor
+--------------
+
+To add a missing cursor, insert an entry into <code>cursors</code> array in <code>script.js</code>. <br/>
+Entry should includes the following.
+<ul>
+	<li>Name : Value of CSS property</li>
+	<li>Browser support : Boolean. If no value is specified for a browser it will be interpreted as not supported.</li>
+</ul>
+
+example :
+<pre><code>
+	{ 
+		"name" 				: "auto", 
+		"chrome" 			: 1, 
+		"firefox"	    	: 1, 
+		"safari"			: 1, 
+		"opera" 			: 1, 
+		"internet-explorer" : 1
+	}
+</code></pre>
+
 Credits
 -------
 <ul>
