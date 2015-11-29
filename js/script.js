@@ -45,7 +45,8 @@ CSSCurssors.cursors = [
 	'{ "name" : "ne-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}',
 	'{ "name" : "nw-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}',
 	'{ "name" : "sw-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}',
-	'{ "name" : "se-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}'
+	'{ "name" : "grab", "chrome" : 1, "firefox" : 1, "safari":0, "opera" : 1, "internet-explorer" : 0}',
+	'{ "name" : "grabbing", "chrome" : 1, "firefox" : 1, "safari":0, "opera" : 1, "internet-explorer" : 0}'
 ];
 
 /**
