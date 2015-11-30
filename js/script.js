@@ -48,6 +48,8 @@ CSSCurssors.cursors = [
 	'{ "name" : "wait", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}'
 	'{ "name" : "grab", "chrome" : 1, "firefox" : 1, "safari":0, "opera" : 1, "internet-explorer" : 0}',
 	'{ "name" : "grabbing", "chrome" : 1, "firefox" : 1, "safari":0, "opera" : 1, "internet-explorer" : 0}'
+	'{ "name" : "zoom-in", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 0}',
+	'{ "name" : "zoom-out", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 0}'
 ];
 
 /**
