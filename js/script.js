@@ -15,42 +15,42 @@ window.onload = function() {
  */
 
 CSSCurssors.cursors = [
-	'{ "name" : "auto", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}',
-	'{ "name" : "default", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}',
-	'{ "name" : "none", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}',
-	'{ "name" : "pointer", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}',
-	'{ "name" : "progress", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}',
-	'{ "name" : "help", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}',
-	'{ "name" : "text", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}',
-	'{ "name" : "cell", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}',
-	'{ "name" : "crosshair", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}',
-	'{ "name" : "alias", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}',
-	'{ "name" : "context-menu", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}',
-	'{ "name" : "vertical-text", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 0, "internet-explorer" : 0}',
-	'{ "name" : "copy", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}',
-	'{ "name" : "move", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}',
-	'{ "name" : "no-drop", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 0, "internet-explorer" : 0}',
-	'{ "name" : "not-allowed", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 0, "internet-explorer" : 0}',
-	'{ "name" : "all-scroll", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 0, "internet-explorer" : 0}',
-	'{ "name" : "col-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 0, "internet-explorer" : 0}',
-	'{ "name" : "row-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 0, "internet-explorer" : 0}',
-	'{ "name" : "nesw-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}',
-	'{ "name" : "nwse-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}',
-	'{ "name" : "n-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}',
-	'{ "name" : "e-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}',
-	'{ "name" : "s-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}',
-	'{ "name" : "w-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}',
-	'{ "name" : "ns-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}',
-	'{ "name" : "ew-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}',
-	'{ "name" : "ne-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}',
-	'{ "name" : "nw-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}',
-	'{ "name" : "sw-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}',
-	'{ "name" : "se-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}',
-	'{ "name" : "wait", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1}',
-	'{ "name" : "grab", "chrome" : 1, "firefox" : 1, "safari":0, "opera" : 1, "internet-explorer" : 0}',
-	'{ "name" : "grabbing", "chrome" : 1, "firefox" : 1, "safari":0, "opera" : 1, "internet-explorer" : 0}',
-	'{ "name" : "zoom-in", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 0}',
-	'{ "name" : "zoom-out", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 0}'
+	'{ "name" : "auto", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
+	'{ "name" : "default", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
+	'{ "name" : "none", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
+	'{ "name" : "pointer", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
+	'{ "name" : "progress", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
+	'{ "name" : "help", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
+	'{ "name" : "text", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
+	'{ "name" : "cell", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
+	'{ "name" : "crosshair", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
+	'{ "name" : "alias", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
+	'{ "name" : "context-menu", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
+	'{ "name" : "vertical-text", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 0, "internet-explorer" : 0, "edge" : 0}',
+	'{ "name" : "copy", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
+	'{ "name" : "move", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
+	'{ "name" : "no-drop", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 0, "internet-explorer" : 0, "edge" : 0}',
+	'{ "name" : "not-allowed", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 0, "internet-explorer" : 0, "edge" : 0}',
+	'{ "name" : "all-scroll", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 0, "internet-explorer" : 0, "edge" : 0}',
+	'{ "name" : "col-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 0, "internet-explorer" : 0, "edge" : 0}',
+	'{ "name" : "row-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 0, "internet-explorer" : 0, "edge" : 0}',
+	'{ "name" : "nesw-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
+	'{ "name" : "nwse-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
+	'{ "name" : "n-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
+	'{ "name" : "e-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
+	'{ "name" : "s-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
+	'{ "name" : "w-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
+	'{ "name" : "ns-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
+	'{ "name" : "ew-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
+	'{ "name" : "ne-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
+	'{ "name" : "nw-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
+	'{ "name" : "sw-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
+	'{ "name" : "se-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
+	'{ "name" : "wait", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
+	'{ "name" : "grab", "chrome" : 1, "firefox" : 1, "safari":0, "opera" : 1, "internet-explorer" : 0, "edge" : 0}',
+	'{ "name" : "grabbing", "chrome" : 1, "firefox" : 1, "safari":0, "opera" : 1, "internet-explorer" : 0, "edge" : 0}',
+	'{ "name" : "zoom-in", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 0, "edge" : 1}',
+	'{ "name" : "zoom-out", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 0, "edge" : 1}'
 ];
 
 /**
@@ -117,6 +117,12 @@ CSSCurssors.createNode = function(cursorData, end ) {
 			browserSupport += '<li class="active"><i class="fa fa-internet-explorer"></i></li>';
 		} else {
 			browserSupport += '<li ><i class="fa fa-internet-explorer"></i></li>';
+		}
+
+		if ( cursorData['edge']  )  {
+			browserSupport += '<li class="active"><i class="fa fa-edge"></i></li>';
+		} else {
+			browserSupport += '<li ><i class="fa fa-edge"></i></li>';
 		}
 
 		newCursorNode.innerHTML = '<div class="description-wrap" style="cursor:'+ cursorData['name'] +'" ><div class="description"><div class="holder">Cursor : ' + cursorData['name']   + '<br/></div></div></div> <ul class="browserSupport">' + browserSupport + '</ul>';
