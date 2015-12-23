@@ -1,7 +1,9 @@
 CSS Cursors
 ================
 
-This is a showcase wrapping the different cursor properties you can set via CSS.
+This is a showcase wrapping the different cursor properties you can set via CSS. 
+
+http://css-cursor.techstream.org/
 
 <strong>Note : This is production version, it includes the analytic and Ad code. Work master branch.</strong>
 
