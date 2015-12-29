@@ -1,6 +1,6 @@
 var CSSCurssors = CSSCurssors || {};
 
-window.onload = function() {
+window.onload = function() { 
 	CSSCurssors.loadCursors();
 }
 
@@ -10,7 +10,7 @@ window.onload = function() {
  * Encapsules the different cursor properties in CSS along with browser that support the property
  * in an array of JSON.
  *
- * an entry needs 'name' property to get displayed, other properties are optional if no  value for browser
+ * an entry needs 'name' property to get displayed, other properties are optional if no  value for browser 
  * is set the browser will be indicated as not supported.
  */
 
@@ -125,11 +125,11 @@ CSSCurssors.createNode = function(cursorData, end ) {
 			browserSupport += '<li ><i class="fa fa-edge"></i></li>';
 		}
 
-		newCursorNode.innerHTML = '<div class="description-wrap" style="cursor: -moz-'+ cursorData['name'] +'; cursor: -webkit-'+ cursorData['name'] +'; cursor:'+ cursorData['name'] +';" ><div class="description"><div class="holder">Cursor : ' + cursorData['name']   + '<br/></div></div></div> <ul class="browserSupport">' + browserSupport + '</ul>';
+		newCursorNode.innerHTML = '<div class="description-wrap" style="cursor: -moz-'+ cursorData['name'] +'; cursor: -webkit-'+ cursorData['name'] +'; cursor:'+ cursorData['name'] +'" ><div class="description"><div class="holder">Cursor : ' + cursorData['name']   + '<br/></div></div></div> <ul class="browserSupport">' + browserSupport + '</ul>';
 		return newCursorNode;
 
 	} else {
 		return 0;
 	}
-
+	
 }
