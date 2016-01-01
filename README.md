@@ -23,7 +23,8 @@ example :
 		"firefox"	    	: 1, 
 		"safari"			: 1, 
 		"opera" 			: 1, 
-		"internet-explorer" : 1
+		"internet-explorer" : 1,
+		"edge"				: 1
 	}
 </code></pre>
 
