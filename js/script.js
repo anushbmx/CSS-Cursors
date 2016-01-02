@@ -125,7 +125,7 @@ CSSCurssors.createNode = function(cursorData, end ) {
 			browserSupport += '<li ><i class="fa fa-edge"></i></li>';
 		}
 
-		newCursorNode.innerHTML = '<div class="description-wrap" style="cursor:'+ cursorData['name'] +'" ><div class="description"><div class="holder">Cursor : ' + cursorData['name']   + '<br/></div></div></div> <ul class="browserSupport">' + browserSupport + '</ul>';
+		newCursorNode.innerHTML = '<div class="description-wrap" style="cursor: -moz-'+ cursorData['name'] +'; cursor: -webkit-'+ cursorData['name'] +'; cursor:'+ cursorData['name'] +'" ><div class="description"><div class="holder">Cursor : ' + cursorData['name']   + '<br/></div></div></div> <ul class="browserSupport">' + browserSupport + '</ul>';
 		return newCursorNode;
 
 	} else {
