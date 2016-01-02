@@ -47,8 +47,8 @@ CSSCurssors.cursors = [
 	'{ "name" : "sw-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
 	'{ "name" : "se-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
 	'{ "name" : "wait", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
-	'{ "name" : "grab", "chrome" : 1, "firefox" : 1, "safari":0, "opera" : 1, "internet-explorer" : 0, "edge" : 0}',
-	'{ "name" : "grabbing", "chrome" : 1, "firefox" : 1, "safari":0, "opera" : 1, "internet-explorer" : 0, "edge" : 0}',
+	'{ "name" : "grab", "chrome" : 0, "firefox" : 1, "safari":0, "opera" : 1, "internet-explorer" : 0, "edge" : 0}',
+	'{ "name" : "grabbing", "chrome" : 0, "firefox" : 1, "safari":0, "opera" : 1, "internet-explorer" : 0, "edge" : 0}',
 	'{ "name" : "zoom-in", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 0, "edge" : 1}',
 	'{ "name" : "zoom-out", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 0, "edge" : 1}'
 ];
