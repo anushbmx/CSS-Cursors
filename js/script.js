@@ -26,14 +26,14 @@ CSSCurssors.cursors = [
 	'{ "name" : "crosshair", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
 	'{ "name" : "alias", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
 	'{ "name" : "context-menu", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
-	'{ "name" : "vertical-text", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 0, "internet-explorer" : 0, "edge" : 1}',
+	'{ "name" : "vertical-text", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 0, "internet-explorer" : 1, "edge" : 1}',
 	'{ "name" : "copy", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
 	'{ "name" : "move", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
-	'{ "name" : "no-drop", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 0, "internet-explorer" : 0, "edge" : 1}',
-	'{ "name" : "not-allowed", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 0, "internet-explorer" : 0, "edge" : 1}',
-	'{ "name" : "all-scroll", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 0, "internet-explorer" : 0, "edge" : 1}',
-	'{ "name" : "col-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 0, "internet-explorer" : 0, "edge" : 1}',
-	'{ "name" : "row-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 0, "internet-explorer" : 0, "edge" : 1}',
+	'{ "name" : "no-drop", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 0, "internet-explorer" : 1, "edge" : 1}',
+	'{ "name" : "not-allowed", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 0, "internet-explorer" : 1, "edge" : 1}',
+	'{ "name" : "all-scroll", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 0, "internet-explorer" : 1, "edge" : 1}',
+	'{ "name" : "col-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 0, "internet-explorer" : 1, "edge" : 1}',
+	'{ "name" : "row-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 0, "internet-explorer" : 1, "edge" : 1}',
 	'{ "name" : "nesw-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
 	'{ "name" : "nwse-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
 	'{ "name" : "n-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
@@ -47,8 +47,8 @@ CSSCurssors.cursors = [
 	'{ "name" : "sw-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
 	'{ "name" : "se-resize", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
 	'{ "name" : "wait", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
-	'{ "name" : "grab", "chrome" : 1, "firefox" : 1, "safari":0, "opera" : 1, "internet-explorer" : 0, "edge" : 0}',
-	'{ "name" : "grabbing", "chrome" : 1, "firefox" : 1, "safari":0, "opera" : 1, "internet-explorer" : 0, "edge" : 0}',
+	'{ "name" : "grab", "chrome" : 0, "firefox" : 1, "safari":0, "opera" : 1, "internet-explorer" : 0, "edge" : 0}',
+	'{ "name" : "grabbing", "chrome" : 0, "firefox" : 1, "safari":0, "opera" : 1, "internet-explorer" : 0, "edge" : 0}',
 	'{ "name" : "zoom-in", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 0, "edge" : 1}',
 	'{ "name" : "zoom-out", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 0, "edge" : 1}'
 ];
@@ -125,7 +125,7 @@ CSSCurssors.createNode = function(cursorData, end ) {
 			browserSupport += '<li ><i class="fa fa-edge"></i></li>';
 		}
 
-		newCursorNode.innerHTML = '<div class="description-wrap" style="cursor:'+ cursorData['name'] +'" ><div class="description"><div class="holder">Cursor : ' + cursorData['name']   + '<br/></div></div></div> <ul class="browserSupport">' + browserSupport + '</ul>';
+		newCursorNode.innerHTML = '<div class="description-wrap" style="cursor: -moz-'+ cursorData['name'] +'; cursor: -webkit-'+ cursorData['name'] +'; cursor:'+ cursorData['name'] +'" ><div class="description"><div class="holder">Cursor : ' + cursorData['name']   + '<br/></div></div></div> <ul class="browserSupport">' + browserSupport + '</ul>';
 		return newCursorNode;
 
 	} else {
