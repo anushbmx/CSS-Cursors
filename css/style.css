@@ -132,6 +132,7 @@ h1, h2, h3, h4, h5, h6 {
 #carbonads {
 	max-width: 300px;
 	margin: 0 auto;
+	margin-bottom: 40px;
 }
 .carbon-wrap {
 	display: inline-block;
