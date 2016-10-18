@@ -53,6 +53,7 @@
 						<div class="row">
 							<div class="column small-6 large-12">
 								<p>CSS cursor showcase. View, experience and choose one for your application ;).</p>
+								<p>Click on the curssor to copy the CSS.</p>
 							</div>
 							<div class="column small-6 large-12">
 								<script async src="//cdn.carbonads.com/carbon.js?zoneid=1673&amp;serve=C6AILKT&amp;placement=techstreamorg" id="_carbonads_js"></script>
@@ -79,6 +80,8 @@
 		<div id="footer"></div>
 	</div>
 	<script src="js/script.js"></script>
+	<script src="js/clipboard.min.js"></script>
+
 	<script>
 	var sc_project=10703843;
 	var sc_invisible=1;
@@ -88,6 +91,14 @@
 	document.write("<sc"+"ript src='" +
 	scJsHost+
 	"statcounter.com/counter/counter.js'></"+"script>");
+	
+
+	var clipboard = new Clipboard('.description-wrap');
+
+	clipboard.on('success', function(e) {
+		console.log(e);
+	});
+	
 	</script>
 </body>
 </html>

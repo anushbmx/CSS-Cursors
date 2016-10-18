@@ -100,6 +100,10 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 
+.toCopy{
+	opacity: 0.4;
+	font-size: 80%;
+}
 
 .browserSupport {
 	bottom: 0;
