@@ -1,7 +1,7 @@
-var CSSCurssors = CSSCurssors || {};
+var CSSCursors = CSSCursors || {};
 
 window.onload = function() { 
-	CSSCurssors.loadCursors();
+	CSSCursors.loadCursors();
 }
 
 /**
@@ -14,7 +14,7 @@ window.onload = function() {
  * is set the browser will be indicated as not supported.
  */
 
-CSSCurssors.cursors = [
+CSSCursors.cursors = [
 	'{ "name" : "auto", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
 	'{ "name" : "default", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
 	'{ "name" : "none", "chrome" : 1, "firefox" : 1, "safari":1, "opera" : 1, "internet-explorer" : 1, "edge" : 1}',
@@ -59,17 +59,17 @@ CSSCurssors.cursors = [
  * Called on page load, parses the Array, extract data and transfer to createNode to make an entry.
  * returned node is appended to the div.
  */
-CSSCurssors.loadCursors = function() {
+CSSCursors.loadCursors = function() {
 	var cursorItems = document.getElementById("cursorItems");
 	var loadingContainer = document.getElementById("loading-container");
 	loadingContainer.parentElement.removeChild(loadingContainer);
-	var sizeOfcursorItems = CSSCurssors.cursors.length;
+	var sizeOfcursorItems = CSSCursors.cursors.length;
 	var end = 0;
-	for ( var cursor in CSSCurssors.cursors ) {
+	for ( var cursor in CSSCursors.cursors ) {
 		if ( (sizeOfcursorItems-1 ) == cursor) {
 			end = 1;
 		}
-		cursorItems.appendChild(CSSCurssors.createNode(CSSCurssors.cursors[cursor], cursor, end));
+		cursorItems.appendChild(CSSCursors.createNode(CSSCursors.cursors[cursor], cursor, end));
 	}
 }
 
@@ -78,7 +78,7 @@ CSSCurssors.loadCursors = function() {
  *
  * Cretes new node for a property and sets the cursor value to it.
  */
-CSSCurssors.createNode = function(cursorData, counter, end ) {
+CSSCursors.createNode = function(cursorData, counter, end ) {
 	var cursorData =  JSON.parse(cursorData);
 	if ( cursorData['name'] ) {
 		var newCursorNode = document.createElement("div");
@@ -125,9 +125,9 @@ CSSCurssors.createNode = function(cursorData, counter, end ) {
 			browserSupport += '<li ><i class="fa fa-edge"></i></li>';
 		}
 
-		curssorStyle = 'cursor: -moz-'+ cursorData['name'] +'; cursor: -webkit-'+ cursorData['name'] +'; cursor:'+ cursorData['name'] +';';
+		cursorStyle = 'cursor: -moz-'+ cursorData['name'] +'; cursor: -webkit-'+ cursorData['name'] +'; cursor:'+ cursorData['name'] +';';
 
-		newCursorNode.innerHTML = '<div class="description-wrap" data-clipboard-action="copy" data-clipboard-target=".curssor' + counter + '" style="' + curssorStyle + '" ><div class="description"><div class="holder">Cursor : ' + cursorData['name']   + '</div><div class="toCopy curssor' + counter + '">' + curssorStyle + '</div></div></div> <ul class="browserSupport">' + browserSupport + '</ul>';
+		newCursorNode.innerHTML = '<div class="description-wrap" data-clipboard-action="copy" data-clipboard-target=".cursor' + counter + '" style="' + cursorStyle + '" ><div class="description"><div class="holder">Cursor : ' + cursorData['name']   + '</div><div class="toCopy cursor' + counter + '">' + cursorStyle + '</div></div></div> <ul class="browserSupport">' + browserSupport + '</ul>';
 		return newCursorNode;
 
 	} else {
