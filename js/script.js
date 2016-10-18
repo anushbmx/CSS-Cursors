@@ -69,7 +69,7 @@ CSSCurssors.loadCursors = function() {
 		if ( (sizeOfcursorItems-1 ) == cursor) {
 			end = 1;
 		}
-		cursorItems.appendChild(CSSCurssors.createNode(CSSCurssors.cursors[cursor],end));
+		cursorItems.appendChild(CSSCurssors.createNode(CSSCurssors.cursors[cursor], cursor, end));
 	}
 }
 
@@ -78,7 +78,7 @@ CSSCurssors.loadCursors = function() {
  *
  * Cretes new node for a property and sets the cursor value to it.
  */
-CSSCurssors.createNode = function(cursorData, end ) {
+CSSCurssors.createNode = function(cursorData, counter, end ) {
 	var cursorData =  JSON.parse(cursorData);
 	if ( cursorData['name'] ) {
 		var newCursorNode = document.createElement("div");
@@ -125,7 +125,9 @@ CSSCurssors.createNode = function(cursorData, end ) {
 			browserSupport += '<li ><i class="fa fa-edge"></i></li>';
 		}
 
-		newCursorNode.innerHTML = '<div class="description-wrap" style="cursor: -moz-'+ cursorData['name'] +'; cursor: -webkit-'+ cursorData['name'] +'; cursor:'+ cursorData['name'] +'" ><div class="description"><div class="holder">Cursor : ' + cursorData['name']   + '<br/></div></div></div> <ul class="browserSupport">' + browserSupport + '</ul>';
+		curssorStyle = 'cursor: -moz-'+ cursorData['name'] +'; cursor: -webkit-'+ cursorData['name'] +'; cursor:'+ cursorData['name'] +';';
+
+		newCursorNode.innerHTML = '<div class="description-wrap" data-clipboard-action="copy" data-clipboard-target=".curssor' + counter + '" style="' + curssorStyle + '" ><div class="description"><div class="holder">Cursor : ' + cursorData['name']   + '</div><div class="toCopy curssor' + counter + '">' + curssorStyle + '</div></div></div> <ul class="browserSupport">' + browserSupport + '</ul>';
 		return newCursorNode;
 
 	} else {
